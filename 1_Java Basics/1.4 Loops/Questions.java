@@ -58,5 +58,7 @@ public class Questions {
         }
 
         // System.out.println("i after the loop = " + i); // ^ since i is declared inside the loop it cannot be accessed outside of that loops scope
+
+        sc.close();
     }   
 }
