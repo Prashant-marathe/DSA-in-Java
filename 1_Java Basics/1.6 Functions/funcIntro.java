@@ -32,6 +32,16 @@ public class funcIntro {
         }
         return fact;
     }
+
+    // ? Question : Find Binomial Coefficient
+    public static int binFact(int n, int r) {
+        int n_fact = factorial(n);
+        int r_fact = factorial(r);
+        int n_m_r_fact = factorial(n-r);
+
+        int binomialCoeff = n_fact / (r_fact * n_m_r_fact);
+        return binomialCoeff;
+    }
     public static void main(String args[]) {
         // ^ Function is a reuable block of code that performs a specific task. It can be called multiple times with different inputs to produce different outputs. functions help in breaking down complex problems into smaller, manageable pieces, making code more organized and easier to read. They can take parameters (inputs) and return values (outputs) based on the logic defined within the function body.
         
@@ -58,6 +68,12 @@ public class funcIntro {
         // ^ Factorial of n
         int factorial = factorial(5);
         System.out.println("Factorial : " + factorial);
+
+        // ^ Binomial Coefficient
+        int n = 5, r = 2;
+        int binomialCoeff = binFact(n, r);
+        System.out.println(binomialCoeff);
+
 
     }
     
